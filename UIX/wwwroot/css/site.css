@@ -77,33 +77,33 @@ body {
 
 
 
-Header{
-    width: 50%;
+Header {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    text-align: center;
+    margin-right:100px
 }
 
 .Header h1 {
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 10px;
 }
 
 .HeaderButton {
-    display: inline-block;
-    padding: 3px;
+    display: inline-flex;
     background-color: #dfd9d9;
     border-radius: 5px;
     text-align:center;
-    margin: 10px;
+    padding: 3px;
+    margin-left: 10px
 }
 
 .Home{
     margin-right: 100px;
     margin-left: auto;
     width: 50%;
-    display:
 }
 
 .HomeBackground {
@@ -124,13 +124,10 @@ form{
 }
 
 .FormItem{
-    padding:10px;
-    font-size:20px;
+    padding:20px;
+    font-size:25px;
 }
 
-.Submit{
-
-}
 
 
 .recipeBoxHeader::after {
