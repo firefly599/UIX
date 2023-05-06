@@ -1,0 +1,178 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+.textBox {
+    position: absolute;
+    width: 600px;
+    display: inline-block;
+    margin: auto;
+    left: 50%;
+    margin-left: -350px;
+}
+
+
+.sectionBox {
+    width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+    display: inline-block;
+    background: #DBDFEA;
+    color: black;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.section {
+    text-align: center;
+}
+
+.section h3{
+    padding-top: 20px;
+    text-align: left
+}
+
+.section p {
+    max-width: 400px;
+    margin: 10px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+.sectionBodyTop br{
+
+}
+
+
+
+.meetingButton {
+    background-color: #474747;
+    color: burlywood;
+    border-radius: 3px;
+}
+
+
+
+
+Header{
+    width: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Header h1 {
+    display: inline-block;
+}
+
+.HeaderButton {
+    display: inline-block;
+    padding: 3px;
+    background-color: #dfd9d9;
+    border-radius: 5px;
+    text-align:center;
+    margin: 10px;
+}
+
+.HomeBackground{
+
+}
+
+
+.recipeBoxHeader::after {
+    content: "";
+    border: 1px solid black;
+    display: block;
+    height: 0px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.imgPlaceholderLeft {
+    display: inline-block;
+    background: black;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.imgPlaceholderRight {
+    display: inline-block;
+    background: black;
+    height: 40px;
+    width: 40px;
+    float: right;
+}
+
+.recipeBox h2 {
+    font-size: 30px;
+}
+
+.recipeBox li, .recipeBox p {
+    font-size: 20px;
+}
+
+.recipeAuthor {
+    height: 127px;
+    width: 127px;
+    float: left;
+}
+
+.recipeImage {
+    height: 127px;
+    width: 127px;
+    float: right;
+}
+
+.likeButton, .saveButton {
+    border: none;
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.likeButton:active, .saveButton:active {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    margin-left: 20px;
+    float: left;
+    transform: scale(1.2);
+    border: 1px rgb(0, 225, 255) solid;
+}
+
+.likes {
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    vertical-align: text-bottom;
+    margin-top: 20px;
+}

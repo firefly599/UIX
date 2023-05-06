@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form class="Meeting" asp-controller="Home" asp-action="CreateMeeting">
+    <input type="number" placeholder="Day" name="day">
+    <input type="number" placeholder="Month" name="month" />
+    <input type="number" placeholder="Hour" name="hour" />
+    <input type="number" placeholder="Minute" name="minute" />
+    <input type="hidden" value="@ViewData["staff"]" name="staff" />
+    <button class="meetingButton" type="submit">Submit</button>
+</form>

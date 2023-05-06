@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    string username = null;
+    string title = null;
+    if (DataManager.activeUser != null)
+    {
+        username = DataManager.activeUser.Name;
+        title = DataManager.activeUser.Title;
+    }
+    List<Messages> messages = DataManager.messages;
+}
+
+
+<h3>Messages</h3>
+<div class="sectionBox">
+    <div class="section">
+        @foreach (Messages message in messages)
+        {
+            if (message.staff == username || message.student == username)
+            {
+                <h4>Chain: @message.staff,  @message.student</h4>
+                foreach (string line in message.messages)
+                {
+                    <p>@line</p>
+                }
+                <form asp-controller="Home" asp-action="SendMsg">
+                    <button class="meetingButton" type="submit">Send msg</button>
+                    <input type="hidden" value="@message.id" name="id">
+                </form>
+            }
+
+        }
+
+    </div>
+</div>
+<form asp-asp-controller="Home" asp-action="NewMsg">
+    <button class="meetingButton" type="submit">New Message</button>
+</form>

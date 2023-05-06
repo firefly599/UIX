@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    List<Person> ppl = DataManager.data;
+}
+<form asp-controller="Home" asp-action="CreateMsg">
+    @foreach (Person p in ppl)
+    {
+        if (p.Title == "Professor")
+        {
+            @p.Name
+        }
+    }
+    Enter Name of staff memner: <input type="text" name="staff" placeholder="Select Staff member"/>
+    <input type="text" name="msg" placeholder="Enter message"/>
+    <button class="meetingButton" type="submit">Submit</button>
+</form>
