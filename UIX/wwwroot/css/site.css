@@ -42,7 +42,7 @@ body {
 }
 
 .section {
-    text-align: center;
+    text-align: cente
 }
 
 .section h3{
@@ -54,6 +54,7 @@ body {
     max-width: 400px;
     margin: 10px;
     text-align: left;
+    
 }
 
 .meetingButton {
@@ -61,6 +62,7 @@ body {
     color: burlywood;
     border-radius: 3px;
 }
+
 
 Header {
     padding: 10px;
