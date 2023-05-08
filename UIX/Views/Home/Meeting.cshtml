@@ -15,29 +15,31 @@
     List<Meeting> meetings = DataManager.meetings;
 }
 
-<h3>Meetings</h3>
-@foreach (Person person in people)
-{
-    @if (person.Title == "Professor" && person != active)
+<div class="pageView">
+    <h3>Meetings</h3>
+    @foreach (Person person in people)
     {
-        <div class="sectionBox">
-            <h1>Professor: @person.Name</h1>
+        @if (person.Title == "Professor" && person != active)
+        {
+            <div class="sectionBox">
+                <h1>Professor: @person.Name</h1>
 
-            @foreach (Meeting meeting in meetings)
-            {
-                if (meeting.staff == person.Name)
+                @foreach (Meeting meeting in meetings)
                 {
-                    <p>Meeting with @meeting.student at @meeting.hour:@meeting.minute </p>
-                }
+                    if (meeting.staff == person.Name)
+                    {
+                        <p>Meeting with @meeting.student at @meeting.hour:@meeting.minute </p>
+                    }
 
-            }
-            @if (title != "Professor" && username != null)
-            {
-                <form asp-controller="Home" asp-action="CreateMeeting">
-                    <button class="meetingButton" type="submit" name="create">Request Meeting</button>
-                    <input type="hidden" name="professor" value="@person.Name">
-                </form>
-            }
-        </div>
+                }
+                @if (title != "Professor" && username != null)
+                {
+                    <form asp-controller="Home" asp-action="CreateMeeting">
+                        <button class="meetingButton" type="submit" name="create">Request Meeting</button>
+                        <input type="hidden" name="professor" value="@person.Name">
+                    </form>
+                }
+            </div>
+        }
     }
-}
+</div>

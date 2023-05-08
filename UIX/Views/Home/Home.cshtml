@@ -3,19 +3,17 @@
 *@
 @{
 }
-<h1>Student Home</h1>
 
-<p>Welcome to the student help app</p>
+<div class="home">
+    <h1>Home</h1>
 
-<form asp-controller="Home" asp-action="Messages">
-    <button type="submit" class="meetingButton">Messages</button>
-</form>
-<form asp-controller="Home" asp-action="Meeting">
-    <button type="submit" class="meetingButton">Meetings</button>
-</form>
-<form asp-controller="Home" asp-action="Profile">
-    <button type="submit" class="meetingButton">Profile</button>
-</form>
-<form asp-controller="Home" asp-action="Logout">
-    <button type="submit" class="meetingButton">Logout</button>
-</form>
+    <p>Welcome to the student help app</p>
+
+    <div class="buttons">
+        <div class="HomeButton"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Meeting">View Meetings</a></div>
+        <div class="HomeButton"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Messages">View Messages</a></div>
+        <div class="HomeButton"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Profile">View Profile</a></div>
+    </div>
+</div>
+
+<img src="/Pictures/HUSU_Logo_Master_Blue.png" class="HomeBackground" />

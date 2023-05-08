@@ -56,25 +56,13 @@ body {
 }
 
 
-
-
-
-
-
-
-.sectionBodyTop br{
-
 }
-
-
 
 .meetingButton {
     background-color: #474747;
     color: burlywood;
     border-radius: 3px;
 }
-
-
 
 
 Header {
@@ -100,14 +88,33 @@ Header {
     margin-left: 10px
 }
 
-.Home{
-    margin-right: 100px;
+.home{
+    margin-right: auto;
     margin-left: auto;
     width: 50%;
 }
 
+.buttons{
+    display: block;
+    margin-right: auto;
+    maring-left: auto;
+    text-align: center;
+}
+
+.HomeButton {
+    background-color: #dfd9d9;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    display: inline-block;
+    word-wrap: normal;
+    width: 100px;
+    height: 100px;
+    text-align:left;
+}
+
 .HomeBackground {
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
@@ -124,10 +131,16 @@ form{
 }
 
 .FormItem{
-    padding:20px;
+    padding:10px;
     font-size:25px;
 }
 
+
+.pageView{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 .recipeBoxHeader::after {
