@@ -10,8 +10,20 @@
     Messages msg = DataManager.messages[id];
 }
 
-<form asp-controller="Home" asp-action="SaveMsg"> 
-    <input type="text" placeholder="Input message" name="msg"/>
-    <input type="hidden" value="@msg.id" name="id" />
-    <button class="meetingButton" type="submit">Submit</button>
-</form>
+<div class="pageView">
+    <h3>Send Messages</h3>
+    <div class="sectionBox">
+        <div class="section">
+            @foreach (string line in msg.messages)
+            {
+                <p>@line</p>
+            }
+        </div>
+    </div>
+
+    <form asp-controller="Home" asp-action="SaveMsg">
+        <input type="text" placeholder="Enter message" name="msg" />
+        <input type="hidden" value="@msg.id" name="id" />
+        <button class="meetingButton" type="submit">Submit</button>
+    </form>
+</div>

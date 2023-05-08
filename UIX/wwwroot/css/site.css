@@ -37,7 +37,8 @@ body {
     color: black;
     padding: 20px;
     margin-top: 10px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .section {
@@ -55,15 +56,11 @@ body {
     text-align: left;
 }
 
-
-}
-
 .meetingButton {
     background-color: #474747;
     color: burlywood;
     border-radius: 3px;
 }
-
 
 Header {
     padding: 10px;
@@ -140,80 +137,4 @@ form{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-.recipeBoxHeader::after {
-    content: "";
-    border: 1px solid black;
-    display: block;
-    height: 0px;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-
-.imgPlaceholderLeft {
-    display: inline-block;
-    background: black;
-    height: 40px;
-    width: 40px;
-    float: left;
-}
-
-.imgPlaceholderRight {
-    display: inline-block;
-    background: black;
-    height: 40px;
-    width: 40px;
-    float: right;
-}
-
-.recipeBox h2 {
-    font-size: 30px;
-}
-
-.recipeBox li, .recipeBox p {
-    font-size: 20px;
-}
-
-.recipeAuthor {
-    height: 127px;
-    width: 127px;
-    float: left;
-}
-
-.recipeImage {
-    height: 127px;
-    width: 127px;
-    float: right;
-}
-
-.likeButton, .saveButton {
-    border: none;
-    background: transparent;
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    margin-left: 20px;
-    float: left;
-}
-
-.likeButton:active, .saveButton:active {
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    margin-left: 20px;
-    float: left;
-    transform: scale(1.2);
-    border: 1px rgb(0, 225, 255) solid;
-}
-
-.likes {
-    display: inline-block;
-    float: left;
-    font-size: 30px;
-    vertical-align: text-bottom;
-    margin-top: 20px;
 }

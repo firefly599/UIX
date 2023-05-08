@@ -3,11 +3,26 @@
 *@
 @{
 }
-<form class="Meeting" asp-controller="Home" asp-action="CreateMeeting">
-    <input type="number" placeholder="Day" name="day">
-    <input type="number" placeholder="Month" name="month" />
-    <input type="number" placeholder="Hour" name="hour" />
-    <input type="number" placeholder="Minute" name="minute" />
-    <input type="hidden" value="@ViewData["staff"]" name="staff" />
-    <button class="meetingButton" type="submit">Submit</button>
-</form>
+
+
+
+
+<div class="pageView">
+    <h3>Organise meeting</h3>
+    <div class="sectionBox">
+        <div class="section">
+            <h1>Professor: @ViewData["staff"]</h1>
+            <form class="Meeting" asp-controller="Home" asp-action="SaveMeeting">
+                <br /><input type="number" placeholder="Day" name="day"><br />
+                <br /><input type="number" placeholder="Month" name="month" /><br />
+                <br /><input type="number" placeholder="Hour" name="hour" /><br />
+                <br /><input type="number" placeholder="Minute" name="minute" /><br />
+                <br /><input type="hidden" value="@ViewData["staff"]" name="staff" />
+                <br /><button class="meetingButton" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

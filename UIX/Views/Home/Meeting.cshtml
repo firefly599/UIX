@@ -28,7 +28,7 @@
                 {
                     if (meeting.staff == person.Name)
                     {
-                        <p>Meeting with @meeting.student at @meeting.hour:@meeting.minute </p>
+                        <p>Meeting with @meeting.student at @meeting.hour:@meeting.minute on @meeting.day|@meeting.month</p>
                     }
 
                 }
@@ -36,7 +36,7 @@
                 {
                     <form asp-controller="Home" asp-action="CreateMeeting">
                         <button class="meetingButton" type="submit" name="create">Request Meeting</button>
-                        <input type="hidden" name="professor" value="@person.Name">
+                        <input type="hidden" name="staff" value="@person.Name">
                     </form>
                 }
             </div>

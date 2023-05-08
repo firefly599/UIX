@@ -4,21 +4,26 @@
 @{
     List<Person> ppl = DataManager.data;
 }
-<form asp-controller="Home" asp-action="CreateMsg">
-    Staff members:
-    @foreach (Person p in ppl)
-    {
-        if (p.Title == "Professor")
-        {
-            <br />@p.Name
-        }
-    }
-    <br />
-    Enter Name of staff memner: <input type="text" name="staff" placeholder="Select Staff member"/>
-    <input type="text" name="msg" placeholder="Enter message"/>
-    <button class="meetingButton" type="submit">Submit</button>
-</form>
 
 <div class="pageView">
+    <h3>New Messages</h3>
+    <div class="sectionBox">
+        <div class="section">
+            <p>Staff members:</p>
+            @foreach (Person p in ppl)
+            {
+                if (p.Title == "Professor")
+                {
+                    <br />@p.Name
+                }
+            }
+            <br />
+            <form asp-controller="Home" asp-action="CreateMsg">
+                <input type="text" name="staff" placeholder="Enter staff" />
+                <input type="text" name="msg" placeholder="Enter message" />
+                <button class="meetingButton" type="submit">Submit</button>
+            </form>
 
+        </div>
+    </div>
 </div>

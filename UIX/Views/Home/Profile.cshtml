@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Person active = DataManager.activeUser;
+    string username = active.Name;
+    List<Meeting> meetings = DataManager.meetings;
+    List<Messages> messages = DataManager.messages;
+}
+
+
+<div class="pageView">
+   
+    <div class="sectionBox">
+        <h1>Profile</h1>
+        <div class="section">
+            <h3>@username</h3>
+            <p>@active.Title</p>
+            <p>Staff member: @active.staff</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1>My meetings</h1>
+        @foreach (Meeting meeting in meetings)
+        {
+
+            @if (meeting.staff == username || meeting.student == username)
+            {
+            <div class="sectionBox">
+                <div class="section">
+                    <p>Meeting with @meeting.student and @meeting.staff at @meeting.hour:@meeting.minute on @meeting.day|@meeting.month</p>
+                </div>
+            </div>
+            }
+        }
+    </div>
+
+    <div class="section">
+        <h1>My Messages</h1>
+        @foreach (Messages message in messages)
+        {
+            @if (message.staff == username || message.student == username)
+            {
+                <div class="sectionBox">
+                    <div class="section">
+
+                        <h4>Chain: @message.staff,  @message.student</h4>
+                        @foreach (string line in message.messages)
+                        {
+                            <p>@line</p>
+                        }
+                        <form asp-controller="Home" asp-action="SendMsg">
+                            <button class="meetingButton" type="submit">Send msg</button>
+                            <input type="hidden" value="@message.id" name="id">
+                        </form>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

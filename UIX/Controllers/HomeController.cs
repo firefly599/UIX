@@ -110,7 +110,7 @@ namespace UIX.Controllers
 
         public IActionResult Profile()
         {
-            return RedirectToAction("Home");
+            return View();
         }
 
         public IActionResult Logout()
