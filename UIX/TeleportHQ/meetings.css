@@ -1,0 +1,379 @@
+.meetings-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.meetings-meetings {
+  width: 100%;
+  height: 1232px;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.meetings-header {
+  top: 130px;
+  left: 504px;
+  width: 432px;
+  height: 77px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.meetings-rectangle1 {
+  top: 0px;
+  left: 0px;
+  width: 432px;
+  height: 77px;
+  position: absolute;
+}
+.meetings-text {
+  color: rgba(0, 0, 0, 1);
+  width: 432px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-mtg-box {
+  top: 922px;
+  left: 522px;
+  width: 395px;
+  height: 218px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.meetings-rectangle2 {
+  top: 0px;
+  left: 0px;
+  width: 395px;
+  height: 276px;
+  position: absolute;
+}
+.meetings-text02 {
+  top: 25.195980072021484px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 365px;
+  height: auto;
+  position: absolute;
+  font-size: 33px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-text04 {
+  top: 88.63819122314453px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 350px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-text05 {
+  top: 135.83920288085938px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 272px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-group4 {
+  top: 212.52261352539062px;
+  left: 84.48611450195312px;
+  width: 212.86111450195312px;
+  height: 33.95979309082031px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.meetings-rectangle3 {
+  top: 0px;
+  left: 0px;
+  width: 203px;
+  height: 34px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.meetings-text07 {
+  left: 4.388885498046875px;
+  color: rgba(0, 0, 0, 1);
+  width: 208px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-mtg-box1 {
+  top: 583px;
+  left: 523px;
+  width: 395px;
+  height: 218px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.meetings-rectangle21 {
+  top: 0px;
+  left: 0px;
+  width: 395px;
+  height: 276px;
+  position: absolute;
+}
+.meetings-text09 {
+  top: 25.195980072021484px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 365px;
+  height: auto;
+  position: absolute;
+  font-size: 33px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-text11 {
+  top: 88.63819122314453px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 350px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-text12 {
+  top: 135.83920288085938px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 272px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-group41 {
+  top: 212.52261352539062px;
+  left: 84.48611450195312px;
+  width: 212.86111450195312px;
+  height: 33.95979309082031px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.meetings-rectangle31 {
+  top: 0px;
+  left: 0px;
+  width: 203px;
+  height: 34px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.meetings-text14 {
+  left: 4.388885498046875px;
+  color: rgba(0, 0, 0, 1);
+  width: 208px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-mtg-box2 {
+  top: 242px;
+  left: 523px;
+  width: 395px;
+  height: 218px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.meetings-rectangle22 {
+  top: 0px;
+  left: 0px;
+  width: 395px;
+  height: 276px;
+  position: absolute;
+}
+.meetings-text16 {
+  top: 25.195980072021484px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 365px;
+  height: auto;
+  position: absolute;
+  font-size: 33px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-text18 {
+  top: 88.63819122314453px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 350px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-text20 {
+  top: 135.83920288085938px;
+  left: 15.36111068725586px;
+  color: rgba(0, 0, 0, 1);
+  width: 272px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-group42 {
+  top: 212.52261352539062px;
+  left: 84.48611450195312px;
+  width: 212.86111450195312px;
+  height: 33.95979309082031px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.meetings-rectangle32 {
+  top: 0px;
+  left: 0px;
+  width: 203px;
+  height: 34px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.meetings-text22 {
+  left: 4.388885498046875px;
+  color: rgba(0, 0, 0, 1);
+  width: 208px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.meetings-header1 {
+  gap: 30px;
+  top: 0px;
+  left: 504px;
+  width: 432px;
+  height: 78px;
+  display: flex;
+  padding: 2px 22px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  background-color: rgba(217, 217, 217, 1);
+}
+.meetings-home {
+  width: 61px;
+  height: 61px;
+}
+.meetings-messages {
+  width: 61px;
+  height: 61px;
+}
+.meetings-meetings1 {
+  width: 61px;
+  height: 61px;
+}
+.meetings-profile {
+  width: 61px;
+  height: 61px;
+}

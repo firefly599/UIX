@@ -19,7 +19,7 @@
     <h3>Meetings</h3>
     @foreach (Person person in people)
     {
-        @if (person.Title == "Professor" && person != active)
+        @if (person.Title == "Professor")
         {
             <div class="sectionBox">
                 <h1>Professor: @person.Name</h1>

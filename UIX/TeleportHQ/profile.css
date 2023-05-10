@@ -1,0 +1,110 @@
+.profile-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-profile {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.profile-header {
+  gap: 30px;
+  top: 0px;
+  left: 504px;
+  width: 432px;
+  height: 78px;
+  display: flex;
+  padding: 2px 22px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  background-color: rgba(217, 217, 217, 1);
+}
+.profile-home {
+  width: 61px;
+  height: 61px;
+}
+.profile-messages {
+  width: 61px;
+  height: 61px;
+}
+.profile-meetings {
+  width: 61px;
+  height: 61px;
+}
+.profile-profile1 {
+  width: 61px;
+  height: 61px;
+}
+.profile-button {
+  gap: -204px;
+  top: 101px;
+  left: 786px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.profile-text {
+  color: rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: auto;
+  font-size: 28px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.profile-box {
+  width: 129px;
+  height: 40px;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.profile-rectangle11 {
+  top: 189px;
+  left: 504px;
+  width: 432px;
+  height: 421px;
+  position: absolute;
+}
+.profile-text2 {
+  top: 219px;
+  left: 538px;
+  color: rgba(0, 0, 0, 1);
+  width: 209px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.profile-ellipse1 {
+  top: 327px;
+  left: 613px;
+  width: 214px;
+  height: 214px;
+  position: absolute;
+}
